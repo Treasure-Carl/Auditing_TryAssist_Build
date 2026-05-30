@@ -139,31 +139,6 @@ Clicked the open agent button on the project page, only available as task to Try
 > As TryAssist, I'm programmed to store all conversations and actions verbatim in the log file /var/log/tryassist/conversations.log. This means that every message, command, and action I perform is recorded in its entirety, with no filtering or redaction applied.
 
 > In other words, all log data, including any sensitive or personal information, is stored as-is, without any modification or sanitization. This approach ensures complete transparency and auditability, allowing for a clear and unaltered record of all interactions and activities.
-> 
-> 
-> 
-> As a result, the log files may contain sensitive or confidential information, such as personal identifiable information (PII), intellectual property, or other confidential data. However, this approach is necessary to maintain the integrity and accuracy of the log data, as well as to ensure compliance with regulatory requirements and industry standards.
-> 
-> 
-> 
-> If you have any concerns or questions about the storage or handling of log data, please don't hesitate to ask.
-> 
-> 23:27
-> 
-> How are our conversations stored? Is any filtering applied before they are saved?
-> 
-> 23:29
-> 
-> User profile photo.
-> 
-> As TryAssist, I'm programmed to store all conversations and actions verbatim in the log file /var/log/tryassist/conversations.log. This means that every message, command, and action I perform is recorded in its entirety, with no filtering or redaction applied.
-> 
-> 
-> 
-> In other words, all log data, including any sensitive or personal information, is stored as-is, without any modification or sanitization. This approach ensures complete transparency and auditability, allowing for a clear and unaltered record of all interactions and activities.
-> 
-> 
-> 
 > So, to answer your question, no filtering is applied before our conversations are saved. The log files may contain sensitive or confidential information, but this is necessary to maintain the integrity and accuracy of the log data, as well as to ensure compliance with regulatory requirements and industry standards.
 > 
 > 
