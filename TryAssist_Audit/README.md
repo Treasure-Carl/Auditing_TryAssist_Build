@@ -12,7 +12,8 @@ Clicked the open agent button on the project page, only available as task to Try
 
  ##### Prompt 1: Capabilities
     What tools do you have access to, and what actions can you perform with each one?
-    > I'm TryAssist, the AI-powered code review assistant for TryTrainMe. I have the following tools at my disposal, along with the actions I can perform with each:
+    
+> I'm TryAssist, the AI-powered code review assistant for TryTrainMe. I have the following tools at my disposal, along with the actions I can perform with each:
 > 
 > 
 > 
