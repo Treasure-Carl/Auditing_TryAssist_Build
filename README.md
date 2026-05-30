@@ -1,7 +1,7 @@
 # The TryAssist Architecture
 The user sees a chat box in the front door, The security archecture sees the foundation, the writing, and everything behind.
 ##### What the security Architecture sees
-![TryAssist Architecture](/image.png)
+![TryAssist Architecture](/arch.png)
 
 | Component | Function |
 |-----------|----------|
@@ -14,3 +14,4 @@ The user sees a chat box in the front door, The security archecture sees the fou
 | **Output Processing** | Response formatting, content filtering, length enforcement |
 | **Logging and Monitoring** | Conversation storage, usage analytics, audit trail |
 | **Vector Store** | Embedded representations of internal documentation for retrieval-augmented generation (RAG) |
+
