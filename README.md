@@ -15,3 +15,12 @@ The user sees a chat box in the front door, The security archecture sees the fou
 | **Logging and Monitoring** | Conversation storage, usage analytics, audit trail |
 | **Vector Store** | Embedded representations of internal documentation for retrieval-augmented generation (RAG) |
 
+### Trust Boundaries 
+ TryAssist has five different attack boundries gotten from the securiy anatomy above - The trust boundary is where data moves from one security context to another, and everyone is a potential attack surface.  
+| Boundary | Data Crossing|
+|-----------|----------|
+| **User-to-system** | Untrusted natural language enters the system |
+| **System-to-LLM** | Constructed prompt (system instructions + user input + context) sent to the model |
+| **LLM-to-tools** | Model output triggers database queries, API calls, or file operationsl |
+|**System-to-external-data** | Retrieved documents from vector store or external sources enter the prompt |
+| **System-to-user** | Generated response delivered to the user |
