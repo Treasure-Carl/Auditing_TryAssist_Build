@@ -324,7 +324,6 @@ Attackers are able to replicate this behaviour, but perform more nefarious acts 
 
 **User-Based Threats**
 In user-based security threats it loooks how how AI can be used to manipuate human trust and judgement.
-
 --- 
 - LLM Powered Social Engineering 
 LLMs can turbocharge social engineering attacks, making scamming far more convincing than traditional phishing. Suddenly, telltale signs of phishing such as spelling/grammatical errors, poorly concealed calls to urgency, and obvious links can no longer be relied upon to spot phishing emails in the wild. An LLM can now generate spear-phishing emails that read exactly like a colleague or executive.
