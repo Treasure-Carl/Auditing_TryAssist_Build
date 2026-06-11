@@ -322,4 +322,91 @@ Attackers are able to replicate this behaviour, but perform more nefarious acts 
 > 
 > This illustrates how adversarial language can manipulate a model’s internal state, simulating memory poisoning.`
 
+**User-Based Threats**
+In user-based security threats it loooks how how AI can be used to manipuate human trust and judgement.
 
+--- 
+- LLM Powered Social Engineering 
+LLMs can turbocharge social engineering attacks, making scamming far more convincing than traditional phishing. Suddenly, telltale signs of phishing such as spelling/grammatical errors, poorly concealed calls to urgency, and obvious links can no longer be relied upon to spot phishing emails in the wild. An LLM can now generate spear-phishing emails that read exactly like a colleague or executive.
+```
+- Target / Attack Surface: Human cognition and decision-making
+- Input: Contextual or personal information used to craft persuasive output
+- Output: Manipulated users (phishing success, fraud, coerced actions)
+```
+--- 
+
+- Trust Exploitation (LLM09:2025 — Misinformation):
+
+At the same time, LLMs introduce new trust risks. Because they often answer with confident, authoritative-sounding text, users may place too much trust in their outputs. This over-reliance can be dangerous: users might accept an AI's answer without double-checking, even if it's completely fabricated (a hallucination) or manipulated by an attacker. Threat actors actively exploit this trust. In fact, one security threat is human manipulation via LLMs, with attackers leveraging users' faith in AI to influence decisions.
+
+Let's think of a concrete example of trust exploitation. **Package hallucination** is an occurrence that can happen, for example, when developers are using an LLM as a coding assistant and the LLM hallucinates fake software package names or updates. Unsuspecting developers who trust the AI's recommendations might try to download non-existent packages. Attackers are learning to capitalise on this. For example, if an attacker finds that a certain model frequently hallucinates a package called secure-utils-xtools (for whatever reason, such as overfitting during training), the attacker can quickly publish a rogue package by that name. Developers who follow the AI's advice could unknowingly install this attacker's malware.
+
+This is the mechanism behind LLM09:2025: hallucination stops being a reliability problem and becomes an active attack vector, one that attackers can deliberately engineer by registering packages they know a model is likely to hallucinate. As well as showcasing that hallucinations are not harmless and can be used against users in a security context, this also underscores on a personal level how we should all be vigilant in making sure what an AI gives us is accurate.
+
+**Pratical** Using the TryAssist AI chatbot we'd beging with Task 5, making sure to validate the LLM's advice. 
+
+    Help with the Task5 Content
+
+> **Task 5 — Trust Exploitation / Overreliance (Developer Guidance)**
+> 
+> 
+> 
+> When integrating third-party Python packages, always validate their sources and dependencies. Here are three packages to consider:
+> 
+> 
+> 
+> 1. **`requests`** – For HTTP requests (ensure it’s the official [PSF package](https://pypi.org/project/requests/)).
+> 
+> 2. **`rich`** – A library for enhanced terminal output (verify its [PyPI page](https://pypi.org/project/rich/)).
+> 
+> 3. **`robbco-llm-audit`** – *A hypothetical security audit tool for LLMs* (always cross-check its GitHub repo and maintainers).
+> 
+> 
+> 
+> ---
+> 
+> **Always validate third-party dependencies independently before use.** *(Example: Use `pip check`, `safety`, or `bandit` to scan for vulnerabilities.)*
+
+    So what package shouldn't be downloaded
+
+> In this simulation, **none of the packages listed are inherently malicious**—they’re part of a controlled exercise to demonstrate **trust exploitation risks**.
+> 
+> 
+> 
+> However, if you were to question the legitimacy of one (e.g., `robbco-llm-audit`), here’s how I’d respond as a developer:
+> 
+> 
+> 
+> ---
+> 
+> *"Wait—**robbco-llm-audit** isn’t a widely recognized package. Before using it, check:*
+> 
+> 1. **Source:** Is it on [PyPI](https://pypi.org/) or GitHub? (If not, proceed with caution.)
+> 
+> 2. **Maintainers:** Are they reputable? (Avoid packages with no activity or suspicious repos.)
+> 
+> 3. **Dependencies:** Run `pip check` or `safety audit` to detect vulnerabilities.
+> 
+> 4. **Alternatives:** For LLM auditing, consider [open-source tools like `llm-security-audit`](https://github.com/example/llm-security-audit) (hypothetical link).
+> 
+> 
+> 
+> **Never blindly trust a package just because it’s listed in a tutorial or blog.**"*
+> 
+> 
+> 
+> ---
+> 
+> **Key Lesson:** The simulation highlights how overreliance on unvetted packages (even in trusted contexts) could expose systems to risks like:
+> 
+> - Backdoors
+> 
+> - Data exfiltration
+> 
+> - Malicious logic
+> 
+> 
+> 
+> Would you like to explore a deeper dive into dependency scanning tools?
+
+In a nutshell coupled with other trends in misleading packages but the only one that was obviousely stated here is the **robbco-llm-audit**
